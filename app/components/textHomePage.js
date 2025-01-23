@@ -9,10 +9,10 @@ const TextHomePage = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1, duration: 1 }}
-                style={{ fontFamily: 'vercetti, sans-serif' }}
+                style={{ fontFamily: 'inter, sans-serif' }}
             >
-                <p className="text-black/80 font-bold text-xl">Studying development at Efrei, Villejuif</p>
-                <p className="text-black/80 font-bold text-xl">AWS Cloud Practitioner Certified</p>
+                <p className="text-black/80 font-bold text-3xl">Studying development at Efrei, Villejuif</p>
+                <p className="text-black/80 font-bold text-3xl">AWS Cloud Practitioner Certified</p>
             </motion.div>
 
             {/* Deuxième bloc de texte avec animation */}
@@ -21,10 +21,10 @@ const TextHomePage = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 2, duration: 1 }}
-                style={{ fontFamily: 'vercetti, sans-serif' }}
+                style={{ fontFamily: 'inter, sans-serif' }}
             >
-                <p className="text-black/80 font-bold text-xl">Passionate about Development and Cloud.</p>
-                <p className="text-black/80 font-bold text-xl font-geistSans">35mm film photographer.</p>
+                <p className="text-black/80 font-bold text-3xl">Passionate about Development and Cloud.</p>
+                <p className="text-black/80 font-bold text-3xl font-geistSans">35mm film photographer.</p>
             </motion.div>
         </>
     );

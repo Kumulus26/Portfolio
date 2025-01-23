@@ -17,7 +17,7 @@ export default function Letstalk() {
           className="text-[5rem] mb-12 text-center"
           style={{ fontFamily: 'dot, sans-serif' }}
         >
-          Better Together
+          better together
         </motion.h1>
 
         {/* Section contenu et formulaire */}
@@ -37,8 +37,14 @@ export default function Letstalk() {
             </p>
             
             <div className="space-y-4 text-lg">
-              <p>If you want mail: axel.lussert@gmail.com</p>
-              <p>If you want to be influenced: @axel__mk4</p>
+              <p>If you want to mail me: <span className="relative group">
+                <a href="mailto:axel.lussert75@gmail.com?subject=Hello%20Axel%20-%20I%20want%20to%20discuss%20with%20you" className="relative">axel.lussert75@gmail.com</a>
+                <span className="absolute right-0 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full origin-right"></span>
+              </span></p>
+              <p>If you want to be influenced: <span className="relative group">
+                <span className="relative">@axel__mk4</span>
+                <span className="absolute right-0 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full origin-right"></span>
+              </span></p>
               <div className="flex space-x-4 mt-6">
                 <a 
                   href="https://github.com/kumulus26" 

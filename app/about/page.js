@@ -16,7 +16,7 @@ export default function About() {
           className="text-[5rem] text-[#1d4044] mb-12"
           style={{ fontFamily: 'vercetti, sans-serif' }}
         >
-          About me<span className="text-[orange]">.</span>
+          about me<span className="text-[orange]">.</span>
         </motion.h1>
 
         <motion.p 
@@ -124,7 +124,7 @@ export default function About() {
               Photography<span className="text-[orange]">.</span>
             </h2>
             <p className="mb-8">
-            Outside of work and studies, I enjoy spending as much time as possible away from my computer, traveling, and walking with my camera. I shoot exclusively with film cameras such as a Canon AE-1 Program, a Pentax K1000, and a recently acquired Leica M2. My favorite lenses are the 28mm and 35mm.</p>
+            Outside of work and studies, I enjoy spending as much time as possible away from my computer, traveling, and walking with my camera. I shoot exclusively with film cameras such as a Canon AE-1 Program, a Pentax K1000, and a recently acquired a Leica M2. My favorite lenses are the 28mm and 35mm. I develop all my films at home.</p>
           </motion.div>
 
           {/* Grille de photos */}
@@ -138,7 +138,7 @@ export default function About() {
             <div className="flex flex-col gap-8">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src="/img/photo1.jpg"
+                  src="/img/image1.jpg"
                   alt="Photo exemple 1"
                   fill
                   className="object-cover"
@@ -154,7 +154,7 @@ export default function About() {
               </div>
               <div className="relative aspect-[3/2]">
                 <Image
-                  src="/img/photo3.jpg"
+                  src="/img/image3.jpg"
                   alt="Photo exemple 3"
                   fill
                   className="object-cover"
@@ -182,7 +182,7 @@ export default function About() {
             <div className="flex flex-col gap-8 pt-24">
               <div className="relative aspect-square">
                 <Image
-                  src="/img/photo4.jpg"
+                  src="/img/image2.jpg"
                   alt="Photo exemple 4"
                   fill
                   className="object-cover"
@@ -206,7 +206,7 @@ export default function About() {
               </div>
               <div className="relative aspect-square">
                 <Image
-                  src="/img/photo8.jpg"
+                  src="/img/image5.jpg"
                   alt="Photo exemple 8"
                   fill
                   className="object-cover"

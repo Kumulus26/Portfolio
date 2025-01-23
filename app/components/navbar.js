@@ -11,18 +11,15 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white z-50 border-b border-gray-200">
       <div className="max-w-[1800px] mx-auto px-4 h-16 flex items-center justify-between relative">
-        {/* Section gauche */}
         <div className="flex items-center space-x-8"
           style={{ fontFamily: 'dot, sans-serif' }}>
           <Link href="/letstalk" className="text-sm font-medium text-black">➡️ LET'S TALK</Link>
         </div>
 
-        {/* Logo central */}
         <Link href="/" className="absolute left-1/2 transform -translate-x-1/2 md:static md:translate-x-0">
           <h1 className="text-2xl font-bold text-orange-500">PORTFOLIO©</h1>
         </Link>
 
-        {/* Hamburger Menu Button */}
         <button 
           className="md:hidden p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -51,7 +48,6 @@ const Navbar = () => {
           </svg>
         </button>
 
-        {/* Section droite - Desktop */}
         <div className="hidden md:flex items-center space-x-6">
           <form 
             onSubmit={(e) => {
@@ -86,7 +82,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="absolute top-16 left-0 right-0 bg-white border-b border-gray-200 md:hidden">
             <div className="flex flex-col p-4 space-y-4">

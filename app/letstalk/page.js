@@ -7,9 +7,7 @@ export default function Letstalk() {
   return (
     <main className="bg-orange-500 min-h-screen">
       <Navbar />
-      {/* Main Content */}
       <section className="px-12 pt-24 max-w-6xl mx-auto text-white">
-        {/* Titre principal */}
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -20,9 +18,7 @@ export default function Letstalk() {
           better together
         </motion.h1>
 
-        {/* Section contenu et formulaire */}
         <div className="grid grid-cols-2 gap-32 mt-24">
-          {/* Colonne de gauche - Texte */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -66,7 +62,6 @@ export default function Letstalk() {
             </div>
           </motion.div>
 
-          {/* Colonne de droite - Formulaire */}
           <motion.form
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

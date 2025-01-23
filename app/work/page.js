@@ -55,7 +55,6 @@ export default function Work() {
     <main className="bg-white min-h-screen">
       <Navbar />
       
-      {/* Header Section */}
       <AnimatePresence>
         {isLoaded && (
           <section className="px-12 pt-32">
@@ -73,7 +72,6 @@ export default function Work() {
               </p>
             </motion.div>
 
-            {/* Projects Grid */}
             <div className="max-w-6xl mx-auto grid grid-cols-2 gap-8">
               {projects.map((project, index) => (
                 <motion.div
@@ -104,17 +102,6 @@ export default function Work() {
           </section>
         )}
       </AnimatePresence>
-
-      {/* Close Button */}
-      <motion.button
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="fixed top-8 right-8 text-2xl"
-        aria-label="Close"
-      >
-        ✕
-      </motion.button>
     </main>
   )
 }

@@ -57,49 +57,67 @@ export default function Work() {
       
       <AnimatePresence>
         {isLoaded && (
-          <section className="px-12 pt-32">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+            {/* Hero Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="max-w-6xl mx-auto"
+              className="text-center mb-24"
             >
-              <h1 className="text-[4rem] text-orange-600 mb-4" style={{ fontFamily: 'vercetti, sans-serif' }}>
-                projects
+              <h1 className="text-[5rem] text-orange-600 mb-6 leading-tight" style={{ fontFamily: 'vercetti, sans-serif' }}>
+                my projects
               </h1>
-              <p className="text-gray-600 text-lg mb-16">
-                projects, from personal and studies
+              <div className="w-24 h-1 bg-orange-600 mx-auto mb-8"></div>
+              <p className="text-gray-600 text-xl max-w-3xl mx-auto">
+                A collection of my personal and academic projects
               </p>
             </motion.div>
 
-            <div className="max-w-6xl mx-auto grid grid-cols-2 gap-8">
-              {projects.map((project, index) => (
-                <motion.div
-                  key={project.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
-                  className="group"
-                >
-                  <Link href={project.href}>
-                    <div className="relative aspect-[4/3] mb-4 overflow-hidden bg-gray-100 rounded-xl">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    </div>
-                    <h3 className="text-xl font-medium mb-1 text-orange-600">{project.title}</h3>
-                    <div className="flex justify-between text-gray-600">
-                      <span>{project.category}</span>
-                      <span>{project.type}</span>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </section>
+            {/* Projects Grid */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {projects.map((project, index) => (
+                  <motion.div
+                    key={project.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: index * 0.1 }}
+                    className="group"
+                  >
+                    <Link href={project.href} target={project.target}>
+                      <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-orange-100 hover:border-orange-300 transition-all duration-300 hover:-translate-y-2">
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                        </div>
+                        <div className="p-6">
+                          <h3 className="text-2xl font-semibold text-orange-600 mb-3">
+                            {project.title}
+                          </h3>
+                          <div className="flex justify-between text-gray-600">
+                            <span className="flex items-center">
+                              <span className="w-2 h-2 bg-orange-400 rounded-full mr-2"></span>
+                              {project.category}
+                            </span>
+                            <span className="text-gray-500">{project.type}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </main>

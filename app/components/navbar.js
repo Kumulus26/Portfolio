@@ -1,12 +1,9 @@
 'use client'
 import Link from 'next/link'
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
 
 const Navbar = () => {
-  const [searchOpen, setSearchOpen] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const router = useRouter()
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white z-50 border-b border-gray-200">
@@ -49,28 +46,6 @@ const Navbar = () => {
         </button>
 
         <div className="hidden md:flex items-center space-x-6">
-          <form 
-            onSubmit={(e) => {
-              e.preventDefault()
-              const searchQuery = e.target.search.value
-              if (searchQuery.trim()) {
-                router.push(`/search?q=${encodeURIComponent(searchQuery)}`)
-              }
-            }}
-            className="flex items-center"
-          >
-            <input
-              type="text"
-              name="search"
-              placeholder="SEARCH..."
-              className="text-sm text-black hover:border hover:border-black p-2 transition-colors bg-transparent outline-none"
-            />
-            <button type="submit">
-              <svg className="w-5 h-5 ml-1 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </button>
-          </form>
           <Link href="/about" className="text-sm text-black hover:border hover:border-black p-2 transition-colors">
             ABOUT
           </Link>
@@ -88,29 +63,6 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="absolute top-16 left-0 right-0 bg-white border-b border-gray-200 md:hidden">
             <div className="flex flex-col p-4 space-y-4">
-              <form 
-                onSubmit={(e) => {
-                  e.preventDefault()
-                  const searchQuery = e.target.search.value
-                  if (searchQuery.trim()) {
-                    router.push(`/search?q=${encodeURIComponent(searchQuery)}`)
-                    setIsMenuOpen(false)
-                  }
-                }}
-                className="flex items-center"
-              >
-                <input
-                  type="text"
-                  name="search"
-                  placeholder="SEARCH..."
-                  className="w-full text-sm text-black hover:border hover:border-black p-2 transition-colors bg-transparent outline-none"
-                />
-                <button type="submit">
-                  <svg className="w-5 h-5 ml-1 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </button>
-              </form>
               <Link 
                 href="/about" 
                 className="text-sm text-black hover:border hover:border-black p-2 transition-colors"
@@ -126,11 +78,18 @@ const Navbar = () => {
                 WORK
               </Link>
               <Link 
-                href="/" 
+                href="/bts" 
                 className="text-sm text-black hover:border hover:border-black p-2 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 BTS
+              </Link>
+              <Link 
+                href="/technowatch" 
+                className="text-sm text-black hover:border hover:border-black p-2 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                TECHNOWATCH
               </Link>
             </div>
           </div>
@@ -141,3 +100,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

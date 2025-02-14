@@ -23,72 +23,88 @@ export default function BTS() {
   }
 
   return (
-    <main className="bg-white min-h-screen pb-16">
+    <main className="bg-white min-h-screen">
       <Navbar />
       
       <AnimatePresence>
         {isLoaded && (
-          <section className="px-12 pt-32">
-            {/* Header Section */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+            {/* Hero Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="max-w-6xl mx-auto mb-16"
+              className="text-center mb-24"
             >
-              <h1 className="text-[4rem] text-orange-600 mb-4" style={{ fontFamily: 'vercetti, sans-serif' }}>
+              <h1 className="text-[5rem] text-orange-600 mb-6 leading-tight" style={{ fontFamily: 'vercetti, sans-serif' }}>
                 BTS SIO SLAM
               </h1>
+              <div className="w-24 h-1 bg-orange-600 mx-auto mb-8"></div>
+              <p className="text-gray-600 text-xl max-w-3xl mx-auto">
+                Services Informatiques aux Organisations - 
+                Solutions Logicielles et Applications Métiers
+              </p>
             </motion.div>
 
-            {/* Description Section */}
+            {/* Overview Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="max-w-6xl mx-auto mb-16"
+              className="grid md:grid-cols-2 gap-16 mb-24"
             >
-              <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                The BTS SIO SLAM is a two-year technical degree focused on software development and business solutions. 
-                At the end of the first semester, it offers two specialization options (SISR and SLAM), 
-                each delivering an additional skill: system and network administration (SISR) or application design and 
-                development (SLAM).
-              </p>
-            </motion.div>
-
-            {/* Speciality Section */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="max-w-6xl mx-auto mb-16"
-            >
-              <h2 className="text-2xl font-semibold text-orange-600 mb-8">My Speciality: SLAM</h2>
-              <div className="bg-orange-50 p-8 rounded-xl">
+              <div className="space-y-6">
+                <h2 className="text-3xl font-semibold text-orange-600">Program Overview</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  The BTS SIO equips students with skills in IT support, cybersecurity, 
-                  and application development. They learn to ensure IT service availability, support digital transformation, 
-                  and manage incidents. In cybersecurity, they analyze risks, protect data, and secure IT infrastructure. 
-                  In development, they design, deploy, and maintain applications while mastering databases and version control.
+                  The BTS SIO SLAM is a two-year technical degree focused on software development and business solutions. 
+                  This program provides comprehensive training in both theoretical and practical aspects of IT, 
+                  preparing students for professional roles in software development and IT services.
                 </p>
+              </div>
+              <div className="bg-orange-50 rounded-2xl p-8 shadow-lg">
+                <h3 className="text-2xl font-semibold text-orange-600 mb-6">Key Focus Areas</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-center text-gray-700">
+                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                    Software Development
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                    Database Management
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                    Web Applications
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
+                    IT Project Management
+                  </li>
+                </ul>
               </div>
             </motion.div>
 
-            {/* Skills Grid */}
+            {/* Skills Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="max-w-6xl mx-auto mb-16"
+              className="mb-24"
             >
-              <h2 className="text-2xl font-semibold text-orange-600 mb-8">Technical Skills</h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <h2 className="text-3xl font-semibold text-orange-600 mb-12 text-center">Technical Skills</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {skills.map((skillGroup, index) => (
-                  <div key={index} className="bg-orange-50 p-6 rounded-xl">
-                    <h3 className="text-lg font-medium text-orange-600 mb-4">{skillGroup.category}</h3>
-                    <ul className="space-y-2">
+                  <div 
+                    key={index} 
+                    className="bg-white p-8 rounded-2xl shadow-lg border border-orange-100 hover:border-orange-300 transition-all duration-300"
+                  >
+                    <h3 className="text-xl font-medium text-orange-600 mb-6">{skillGroup.category}</h3>
+                    <ul className="space-y-3">
                       {skillGroup.items.map((item, idx) => (
-                        <li key={idx} className="text-gray-700">{item}</li>
+                        <li key={idx} className="text-gray-700 flex items-center">
+                          <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-3"></span>
+                          {item}
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -96,19 +112,21 @@ export default function BTS() {
               </div>
             </motion.div>
 
-            {/* Download Button Section */}
+            {/* Download Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.25 }}
-              className="max-w-6xl mx-auto mb-16 text-center"
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="text-center bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl p-12"
             >
+              <h2 className="text-2xl font-semibold text-orange-600 mb-6">Want to learn more?</h2>
+              <p className="text-gray-700 mb-8">Download my E4 file for detailed information about my studies</p>
               <button
                 onClick={handleDownload}
-                className="group relative inline-flex items-center justify-center px-8 py-3 bg-orange-600 text-white rounded-lg overflow-hidden transition-all duration-300 hover:bg-orange-700 transform hover:-translate-y-1"
+                className="group relative inline-flex items-center justify-center px-8 py-3 bg-orange-600 text-white rounded-lg overflow-hidden transition-all duration-300 hover:bg-orange-700 transform hover:-translate-y-1 shadow-lg"
               >
                 <span className="relative flex items-center gap-2">
-                  Click here to download my E4 file
+                  Download E4 File
                   <svg 
                     className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-1" 
                     fill="none" 
@@ -125,7 +143,7 @@ export default function BTS() {
                 </span>
               </button>
             </motion.div>
-          </section>
+          </div>
         )}
       </AnimatePresence>
     </main>

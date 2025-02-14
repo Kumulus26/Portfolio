@@ -17,7 +17,7 @@ export default function Work() {
       id: 1,
       title: "Weather Website",
       category: "Web App", 
-      type: "Personal",
+      type: "Personal Project",
       image: "/img/projet1meteo.png",
       href: "https://github.com/Kumulus26/Weather",
       target: '_blank'
@@ -42,11 +42,11 @@ export default function Work() {
     },
     {
       id: 4,
-      title: "work in progress",
-      category: "?",
-      type: "see you soon",
-      image: "/img/dotdotdot.png",
-      href: "",
+      title: "DevAtHome",
+      category: "Web App",
+      type: "Personal Project",
+      image: "/img/image.png",
+      href: "https://dev-at-home.vercel.app",
       target: '_blank'
     }
   ]

@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 const TextHomePage = () => {
     return (
         <>
-            {/* Premier bloc de texte avec animation */}
             <motion.div 
                 className="absolute top-[15%] left-[10%]"
                 initial={{ opacity: 0 }}
@@ -15,7 +14,6 @@ const TextHomePage = () => {
                 <p className="text-black/80 font-bold text-3xl">AWS Cloud Practitioner Certified</p>
             </motion.div>
 
-            {/* Deuxième bloc de texte avec animation */}
             <motion.div 
                 className="absolute bottom-[20%] right-[10%]"
                 initial={{ opacity: 0 }}

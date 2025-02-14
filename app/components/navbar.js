@@ -77,8 +77,11 @@ const Navbar = () => {
           <Link href="/work" className="text-sm text-black hover:border hover:border-black p-2 transition-colors">
             WORK
           </Link>
-          <Link href="/" className="text-sm text-black hover:border hover:border-black p-2 transition-colors">
-            RESUME
+          <Link href="/bts" className="text-sm text-black hover:border hover:border-black p-2 transition-colors">
+            BTS
+          </Link>
+          <Link href="/technowatch" className="text-sm text-black hover:border hover:border-black p-2 transition-colors">
+            TECHNOWATCH
           </Link>
         </div>
 
@@ -127,7 +130,7 @@ const Navbar = () => {
                 className="text-sm text-black hover:border hover:border-black p-2 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                RESUME
+                BTS
               </Link>
             </div>
           </div>

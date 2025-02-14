@@ -7,7 +7,6 @@ export default function About() {
   return (
     <main className="bg-[#f8f9fa] min-h-screen">
       <Navbar />
-      {/* Main Content */}
       <section className="px-12 pt-24 max-w-6xl mx-auto">
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
@@ -29,7 +28,6 @@ export default function About() {
           I'm a <span className="font-semibold text-orange-500">student developer</span>, <span className="font-semibold text-orange-500">system and network technician</span> and <span className="font-semibold text-orange-500">cloud practitioner</span>. I love the fact that I can create a lot of things with my keyboard.
         </motion.p>
 
-        {/* Scroll Indicator */}
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -42,9 +40,7 @@ export default function About() {
           <div className="w-[1px] h-[400px] bg-[#94a3b8]"></div>
         </motion.div>
 
-        {/* Content Section with Image */}
         <div className="grid grid-cols-[1.2fr_0.8fr] gap-32">
-          {/* Text Column */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +56,6 @@ export default function About() {
             </p>
           </motion.div>
 
-          {/* Image Column */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -78,7 +73,6 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Image Column */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -95,7 +89,6 @@ export default function About() {
               />
             </div>
           </motion.div>
-        {/* Text Column */}
         <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -111,9 +104,7 @@ export default function About() {
         
         </div>
 
-        {/* Section Photographie */}
         <div className="mt-32">
-          {/* En-tête et texte */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -127,14 +118,12 @@ export default function About() {
             Outside of work and studies, I enjoy spending as much time as possible away from my computer, traveling, and walking with my camera. I shoot exclusively with film cameras such as a Canon AE-1 Program, a Pentax K1000, and a recently acquired a Leica M2. My favorite lenses are the 28mm and 35mm. I develop all my films at home.</p>
           </motion.div>
 
-          {/* Grille de photos */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             className="grid grid-cols-2 gap-8"
           >
-            {/* Colonne gauche */}
             <div className="flex flex-col gap-8">
               <div className="relative aspect-[4/3]">
                 <Image
@@ -178,7 +167,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Colonne droite */}
             <div className="flex flex-col gap-8 pt-24">
               <div className="relative aspect-square">
                 <Image
@@ -215,7 +203,6 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Bouton Instagram */}
           <motion.div 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -223,7 +210,7 @@ export default function About() {
             className="flex justify-center mt-16"
           >
             <a 
-              href="https://www.instagram.com/axel__mk4" 
+              href="https://www.instagram.com/axel.onfilm/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group relative inline-flex items-center gap-2 px-8 py-4 bg-white border-2 border-[#1d4044] text-black rounded-full overflow-hidden transition-all duration-300 hover:bg-orange-500"

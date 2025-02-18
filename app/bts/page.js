@@ -18,8 +18,7 @@ export default function BTS() {
   ]
 
   const handleDownload = () => {
-    // Add download logic here when file is ready
-    // window.open('/path-to-your-file.pdf', '_blank')
+    window.open('/Tableau de synthèse - Epreuve E4 - BTS SIO 2024.pdf', '_blank')
   }
 
   return (

@@ -41,6 +41,16 @@ export default function Technowatch() {
       summary: "Silicon Valley software engineers are in panic mode as they struggle to find new jobs. The market is flooded with candidates, and employers are demanding more experience and skills than ever before.",
       link: "https://futurism.com/silicon-valley-engineers-jobs",
       readTime: "5 min read"
+    },
+    {
+      id: 4,
+      title: "L'IA est en train de s'empoisonner elle-même",
+      date: "February 14, 2025",
+      category: "Artificial Intelligence",
+      image: "/img/ai-micode.jpg",
+      summary: "Trained on its own outputs, AI regurgitates errors, dulls creativity, and traps itself in an echo chamber.",
+      link: "https://www.youtube.com/watch?v=AfgAEIK9F8c",
+      readTime: "30 min watch"
     }
   ]
 

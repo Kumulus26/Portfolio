@@ -18,7 +18,7 @@ export default function BTS() {
   ]
 
   const handleDownload = () => {
-    window.open('/Tableau de synthèse - Epreuve E4 - BTS SIO 2024.pdf', '_blank')
+    window.open('/E4-BTS-SIO-2024.pdf', '_blank')
   }
 
   return (
@@ -28,7 +28,6 @@ export default function BTS() {
       <AnimatePresence>
         {isLoaded && (
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-            {/* Hero Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -45,7 +44,6 @@ export default function BTS() {
               </p>
             </motion.div>
 
-            {/* Overview Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -83,7 +81,6 @@ export default function BTS() {
               </div>
             </motion.div>
 
-            {/* Skills Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -111,7 +108,6 @@ export default function BTS() {
               </div>
             </motion.div>
 
-            {/* Download Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

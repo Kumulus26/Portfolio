@@ -115,13 +115,13 @@ export default function BTS() {
               className="text-center bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl p-12"
             >
               <h2 className="text-2xl font-semibold text-orange-600 mb-6">Want to learn more?</h2>
-              <p className="text-gray-700 mb-8">Download my E4 file for detailed information about my studies</p>
+              <p className="text-gray-700 mb-8">Download my E5 file for detailed information about my studies</p>
               <button
                 onClick={handleDownload}
                 className="group relative inline-flex items-center justify-center px-8 py-3 bg-orange-600 text-white rounded-lg overflow-hidden transition-all duration-300 hover:bg-orange-700 transform hover:-translate-y-1 shadow-lg"
               >
                 <span className="relative flex items-center gap-2">
-                  Download E4 File
+                  Download E5 File
                   <svg 
                     className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-1" 
                     fill="none" 

@@ -14,43 +14,43 @@ export default function Technowatch() {
   const articles = [
     {
       id: 1,
-      title: "The 'First AI Software Engineer' Is Bungling the Vast Majority of Tasks It's Asked to Do",
-      date: "January 24, 2025",
-      category: "Artificial Intelligence",
-      image: "/img/ai-code.jpg",
-      summary: "Cognition AI’s Devin, marketed as an autonomous coding assistant, struggles with fundamental tasks, often hallucinating solutions and working slower than human coders. Researchers highlight the gap between AI hype and reality, questioning whether such tools can truly replace software engineers.",
-      link: "https://futurism.com/first-ai-software-engineer-devin-bungling-tasks",
-      readTime: "5 min read"
+      title: "How Data Lakehouses Improve Generative AI Accuracy",
+      date: "May 07, 2025",
+      category: "Artificial Intelligence, Data",
+      image: "/img/ai-code.png",
+      summary: "Data lakehouses combine the strengths of data lakes and data warehouses, enabling organizations to efficiently manage and analyze their enterprise data. They enhance AI application accuracy by integrating up-to-date domain and industry information, using retrieval augmented generation (RAG) to provide precise answers based on current data. This approach improves AI performance and customization, driving innovation and efficient decision-making.",
+      link: "https://www.youtube.com/watch?v=0S7zbkTCYbs&ab_channel=IBMTechnology",
+      readTime: "4 min watch"
     },
     {
       id: 2,
-      title: "Oracle justified its JavaScript trademark with Node.js—now it wants that ignored",
-      date: "February 04, 2025",
-      category: "Web Development",
-      image: "/img/oracle-js.png",
-      summary: "Oracle is stalling and avoiding accountability in response to Deno’s petition to cancel its “JavaScript” trademark, despite having no role in the language’s development. It previously renewed the trademark using a misleading Node.js screenshot and now argues it doesn’t matter. This raises concerns about corporate trademark abuse, fueling calls to challenge Oracle’s claim.",
-      link: "https://www.theregister.com/2025/02/04/oracle_deno_javascript_trademark/",
+      title: "Top 10 Best Practices for Effective Data Protection",
+      date: "May 16, 2025",
+      category: "Data Protection",
+      image: "/img/data-protection.png",
+      summary: "Implementing effective data protection involves defining data goals, automating data classification, adopting zero trust security, and centralizing data loss prevention. Organizations should address key data loss channels, maintain compliance, strategize for BYOD, and control cloud security posture. Training employees and automating incident management are crucial steps in building a strong data protection framework.",
+      link: "https://thehackernews.com/2025/05/top-10-best-practices-for-effective.html",
       readTime: "9 min read"
     },
     {
       id: 3,
-      title: "Silicon Valley Software Engineers Horrified as They Can't Easily Find Jobs Anymore",
-      date: "February 13, 2025",
-      category: "Web Development",
-      image: "/img/silicon-valley.jpg",
-      summary: "Silicon Valley software engineers are in panic mode as they struggle to find new jobs. The market is flooded with candidates, and employers are demanding more experience and skills than ever before.",
-      link: "https://futurism.com/silicon-valley-engineers-jobs",
-      readTime: "5 min read"
+      title: "This will finally change in Python 3.14",
+      date: "April 20, 2025",
+      category: "Development",
+      image: "/img/python-3.14.png",
+      summary: "PEP 765 will be introduced in Python 3.14, disallowing return, break, and continue statements from exiting a finally block, thereby preventing potential bugs. The finally block ensures execution regardless of any raised exceptions. This change aims to enhance code reliability and prevent misused statements that could lead to bugs.",
+      link: "https://www.youtube.com/watch?v=dXz9Wqg3FMQ&ab_channel=Indently",
+      readTime: "3 min read"
     },
     {
       id: 4,
-      title: "L'IA est en train de s'empoisonner elle-même",
-      date: "February 14, 2025",
-      category: "Artificial Intelligence",
-      image: "/img/ai-micode.jpg",
-      summary: "Trained on its own outputs, AI regurgitates errors, dulls creativity, and traps itself in an echo chamber.",
-      link: "https://www.youtube.com/watch?v=AfgAEIK9F8c",
-      readTime: "30 min watch"
+      title: "Why Are There So Many Databases ?",
+      date: "May 17, 2025",
+      category: "Data",
+      image: "/img/databases.png",
+      summary: "The post is an opinionated guide on modern database architectures, categorizing them into nine types including data warehouses, data lakes, transactional databases, and more. It discusses their strengths, weaknesses, and appropriate use cases, emphasizing that PostgreSQL suits most applications while advising caution against trendy but unnecessary solutions. Beginners should focus on understanding broad categories rather than becoming experts in every new offering.",
+      link: "https://blog.det.life/why-are-there-so-many-databases-87d334c5dce6",
+      readTime: "13 min read"
     }
   ]
 
